@@ -1,0 +1,139 @@
+@import 'font/TTLakes/stylesheet.css';
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color:white;
+
+}
+html{
+   
+    font-family: 'TT Lakes';
+
+}
+.header__nav{
+    /* padding:5px 0; */
+    
+}
+.header__nav-ul{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* flex-wrap: nowrap; */
+    /* align-content: center; */
+    /* padding:10px 0; */
+   
+}
+.header__ul-li{
+    list-style-type: none;
+}
+.header__li-ul_span{
+    display: inline-block;
+border:1px solid #EAEAEA;
+height: 32px;
+
+}
+.header__li-ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.header__li-ul_li{
+    list-style-type: none;
+    padding: 15px 0;
+    padding-left:16px;
+}
+.header__li-padding{
+    padding-right:20px;
+}
+.main{
+
+    background-color:#F8F8F8;
+}
+.main-padding{
+    padding-top:24px;
+}
+.main__h1{
+    padding-bottom:24px;
+}
+.main__h1::before{
+content:'';
+margin-right:16px;
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+padding-right:4px;
+background-color:#41F6D7;
+}
+.main__menu-ul{
+    display:flex;
+    margin-bottom:24px;
+    margin-left:16px;
+    /* overflow-x: scroll; */
+}
+.main__menu-li{
+    display:inline-block;
+    list-style-type: none;
+}
+.main__menu-a{
+    color:#7E7E82;
+    text-decoration: none;
+}
+.main__menu-a_span{
+    display: flex;
+    padding:8px 10px;
+    margin:5px;
+    border-radius: 6px;
+}
+.main__menu-li:nth-child(1) .main__menu-a_span{
+    border: 2px solid #B8FFEC;
+}
+
+.main__section-furt_a{
+    display:flex;
+    color:#000;
+    text-decoration: none;
+    margin:16px 0;
+}
+.main__section-div_1:first-child{
+    padding-left:16px;
+
+}
+.main__section-p:nth-child(2){
+    display: none;
+}
+@media screen and (min-width:320px) {
+    html{
+        width:100%;
+
+    }
+
+    .header__nav-ul{
+        justify-content: space-between;    
+
+    }
+    .main__menu-ul{
+        overflow-x: scroll;
+    }
+    .main__menu-li{
+        min-width:250px;
+    }
+    .main__menu-li:nth-child(1){
+        margin-right:8px;
+    }
+    .main__menu-li:nth-child(3){
+        min-width: 150px;
+    }
+    .main__menu-li:nth-child(5){
+        min-width: 180px;
+    }
+    .main__menu-li:nth-child(6){
+        min-width: 120px;
+    }
+    .main__section-div_img{
+        width:100%;
+        height:176px;
+        margin-bottom:35px;
+    }
+}
